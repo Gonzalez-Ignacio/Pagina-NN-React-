@@ -1,0 +1,40 @@
+/* Seccion Presentacion */
+.presentacion {
+    margin: -1px;
+}
+
+
+.btn.btn-violeta.botonLeerMas {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn.btn-violeta.botonLeerMas:hover {
+    background-color: white;
+    color: black !important;
+}
+
+/* Seccion Beneficios */
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Seccion PlantillaDestacada */
+.btn.btn-violeta.btn-enviar {
+    margin: 0;
+    padding: 6px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    font-size: 16px;
+}
+
+.btn.btn-violeta.btn-enviar:hover {
+    background-color: #4c38a7;
+}

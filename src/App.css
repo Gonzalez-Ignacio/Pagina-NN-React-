@@ -1,0 +1,39 @@
+#root {
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.bg-morado {
+  --bs-bg-opacity: 1;
+  background-color: #20115B
+}
+
+.btn.btn-violeta {
+  --bs-bg-opacity: 1;
+  background-color: #7232F2;
+}
+
+.btn.btn-violeta:hover {
+  --bs-bg-opacity: 1;
+  background-color: #C876FF;
+}
+
+
+
+/* Footer */
+.footer {
+  margin-right: -2px;
+}
+.icono-whatsapp {
+  color: #25D366;
+}
+
+.icono-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 100%;
+  padding: 5px;
+  color: white;
+}
