@@ -18,7 +18,7 @@ function Nav() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link">Inicioa</Link> 
+                            <Link to="/" className="nav-link">Inicio</Link> 
                         </li>
                         <li className="nav-item">
                             <Link to="/acercaDe" className="nav-link">Acerca de</Link> 
@@ -27,7 +27,7 @@ function Nav() {
                             {/* <Link to="/contacto" className="nav-link">Contacto</Link>  */}
                         </li>
                         <li className="nav-item">
-                            {/* <Link to="/precios" className="nav-link">Precios</Link>  */}
+                            <Link to="/precio" className="nav-link">Precios</Link> 
                         </li>
                         <li className="nav-item">
                             {/* <Link to="/preguntasFrecuentes" className="nav-link">Preguntas Frecuentes</Link>  */}

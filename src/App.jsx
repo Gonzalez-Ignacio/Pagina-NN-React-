@@ -8,6 +8,8 @@ import Home from './paginas/home/Home';
 import Nav from './componentes/Nav'; 
 import Footer from './componentes/Footer';
 import AcercaDe from './paginas/acerca-de/AcercaDe';
+import Precio from './paginas/precio/Precio';
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
                         <Routes>       {/* Si no lo usamos, se renderiza toda la pagina principal y pagina que renderizaremos */}
                             <Route path="/" element={<Home />} />                   {/* Definimos las rutas. */}
                             <Route path="/acercaDe" element={<AcercaDe />} />
+                            <Route path="/precio" element={<Precio />} />
                         </Routes>
                        
                 </main>
