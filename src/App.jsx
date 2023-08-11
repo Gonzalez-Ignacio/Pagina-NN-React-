@@ -9,6 +9,7 @@ import Nav from './componentes/Nav';
 import Footer from './componentes/Footer';
 import AcercaDe from './paginas/acerca-de/AcercaDe';
 import Precio from './paginas/precio/Precio';
+import PreguntasFrecuentes from './paginas/preguntasFrecuentes/PreguntasFrecuentes';
 
 
 
@@ -27,6 +28,7 @@ function App() {
                             <Route path="/" element={<Home />} />                   {/* Definimos las rutas. */}
                             <Route path="/acercaDe" element={<AcercaDe />} />
                             <Route path="/precio" element={<Precio />} />
+                            <Route path="/preguntasFrecuentes" element={<PreguntasFrecuentes />} />
                         </Routes>
                        
                 </main>

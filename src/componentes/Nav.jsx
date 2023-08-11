@@ -30,7 +30,7 @@ function Nav() {
                             <Link to="/precio" className="nav-link">Precios</Link> 
                         </li>
                         <li className="nav-item">
-                            {/* <Link to="/preguntasFrecuentes" className="nav-link">Preguntas Frecuentes</Link>  */}
+                            <Link to="/preguntasFrecuentes" className="nav-link">Preguntas Frecuentes</Link> 
                         </li>
                         {/* Blog comentado para futuro feature donde daremos las noticias mas Actualizadas de nuestra web  */}
                         {/* 
