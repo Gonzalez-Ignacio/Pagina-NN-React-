@@ -1,5 +1,6 @@
 import React from 'react';
 import Acordeon from './componentePreguntasFrecuentes/Acordeon';
+import './PreguntaFrecuente.css'
 
 function PreguntasFrecuentes() {
     const acordeonData = [
@@ -17,14 +18,6 @@ function PreguntasFrecuentes() {
                 {tituloPregunta: "¿Cuánto tiempo tomará desarrollar mi página web?", descripcionRespuesta: "Esta pregunta es muy común, ya que los clientes desean tener una idea clara de cuánto tiempo llevará completar su proyecto. La respuesta dependerá del alcance y la complejidad de la página web, así como de la disponibilidad de los recursos necesarios.Es importante proporcionar una estimación realista y tener en cuenta posibles retrasos." },
                 { tituloPregunta: "¿Cuál es el costo de desarrollar una página web?", descripcionRespuesta: "millones de dolares" },
                 { tituloPregunta: "¿Qué incluye el mantenimiento y soporte posterior al lanzamiento?", descripcionRespuesta: "sin rta" },
-            ],
-        },
-        {
-            tituloAcordeones: "Servicios post-venta",
-            PregRta: [
-                { tituloPregunta: "¿Cómo puedo realizar actualizaciones o cambios en mi página web una vez que esté en funcionamiento?", descripcionRespuesta: "Después de que tu página web esté en funcionamiento, es común que desees realizar actualizaciones o cambios en el contenido, diseño o funcionalidad. Puedes preguntar cómo se puede comunicar con tu equipo de desarrollo web para solicitar estos cambios y qué proceso se sigue para implementar las actualizaciones de manera eficiente." },
-                { tituloPregunta: "¿Qué sucede si encuentro algún problema o error en mi página web después de su entrega?", descripcionRespuesta: "Si descubres algún problema o error en tu página web después de su entrega, es importante saber cómo puedes informar a tu proveedor de servicios para obtener asistencia. Pregunta sobre los canales de comunicación disponibles, como el correo electrónico o un sistema de tickets, y cómo se abordan los problemas para asegurarte de que recibirás un soporte oportuno y eficaz." },
-                { tituloPregunta: "¿Qué opciones tengo para mejorar o expandir mi página web en el futuro?", descripcionRespuesta: "A medida que tu negocio crezca o tus necesidades cambien, es posible que desees expandir o mejorar tu página web. Pregunta sobre las opciones disponibles para realizar mejoras o agregar nuevas funcionalidades a tu sitio. Puedes explorar la posibilidad de servicios adicionales, como diseño personalizado, integración de comercio electrónico o incorporación de blogs, y cómo se puede gestionar la implementación de estas actualizaciones." },
             ],
         },
     ];

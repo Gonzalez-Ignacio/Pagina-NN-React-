@@ -1,0 +1,23 @@
+/* Estilos para las transiciones */
+.accordion-collapse {
+    transition: height 13s ease-in-out, opacity 1s ease-in-out !important;
+    transition-delay: heigth 10s , opacity 10s !important;
+}
+.accordion-button {
+    transition: height 13s ease-in-out, opacity 1s ease-in-out !important;
+    transition-delay: heigth 10s , opacity 10s !important;
+}
+.accordion {
+    transition: height 13s ease-in-out, opacity 1s ease-in-out !important;
+    transition-delay: heigth 10s , opacity 10s !important;
+}
+.collapse {
+    transition: height 13s ease-in-out, opacity 1s ease-in-out !important;
+    transition-delay: heigth 10s , opacity 10s !important;
+}
+
+/* Cuando la sección de la respuesta está abierta */
+.accordion-collapse.show {
+    height: auto; /* Cambia la altura automáticamente */
+    opacity: 1; /* Muestra la respuesta */
+}

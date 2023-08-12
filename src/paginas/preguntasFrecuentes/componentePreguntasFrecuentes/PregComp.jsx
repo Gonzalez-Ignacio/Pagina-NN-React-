@@ -1,23 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import '../PreguntaFrecuente.css'
 
-function PregComp({ id, tituloPregunta, descripcionRespuesta }) {
-    const [abierto] = useState(false);          //Controlamos con useState si esta abierto o no.       useState(false)=no esta abierto por defecto
-
-
-
+function PregComp({tituloPregunta, descripcionRespuesta, abierto, onToggle }) {
     return (
         <div className="accordion-item">
-            <h3 className="accordion-header" id={`headingOne${id}`}>
+            <h3 className="accordion-header">
                 <button
-                    className="accordion-button collapsed"
-                    type="button" data-bs-toggle="collapse" data-bs-target={`#collapseOne${id}`}
-                    aria-expanded="false" aria-controls={`collapseOne${id}`}
+                    className={`accordion-button ${abierto ? '' : 'collapsed'}`}        //Si esta abierto, no le damos ninguna clase, sino lo cerramos (con esto controlamos en el togglePregunta)
+                    type="button"
+                    onClick={onToggle}                                                  // Controlamos el estado de abierto/cerrado.
                 >
                     {tituloPregunta}
                 </button>
             </h3>
-            <div className={`accordion-collapse collapse ${abierto ? 'show' : ''}`} id={`collapseOne${id}`}         //Controlamos si esta abierto, si esta abierto se muestra
-                aria-labelledby={`headingOne${id}`} data-bs-parent="#accordionExample">
+            <div className={`accordion-collapse collapse ${abierto ? 'show' : ''}`}>    {/* Mostramos/Ocultamos según si esta abierto o collapsed*/}
                 <div className="accordion-body">
                     {descripcionRespuesta}
                 </div>
