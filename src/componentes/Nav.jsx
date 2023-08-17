@@ -1,15 +1,10 @@
 import React from 'react';
-// Style
-import '../css/Nav.css';
-// Ruta Nav
-import { Link } from 'react-router-dom'; // Importa el componente Link
 import logo from '../imagenes/logos/blanco.svg';
 // Style
 import '../css/Nav.css';
 // Ruta Nav
 import { Link } from 'react-router-dom'; // Importa el componente Link
 // Imagenes
-import logo from '../imagenes/logos/blanco.png';
 
 function Nav() {
     return (

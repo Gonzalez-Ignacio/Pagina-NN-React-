@@ -15,6 +15,7 @@ import AcercaDe from './paginas/acerca-de/AcercaDe';
 import Precio from './paginas/precio/Precio';
 import PreguntasFrecuentes from './paginas/preguntasFrecuentes/PreguntasFrecuentes';
 import Plantillas from './paginas/plantillas/Plantillas';
+import { Politicas } from './paginas/politicas-y-privacidad/Politicas';
 
 
 
@@ -35,6 +36,7 @@ function App() {
                         <Route path="/precio" element={<Precio />} />
                         <Route path="/preguntasFrecuentes" element={<PreguntasFrecuentes />} />
                         <Route path="/plantilla" element={<Plantillas />} />
+                        <Route path="/politicasyprivacidad" element={<Politicas/>} />
                     </Routes>
 
                 </main>
