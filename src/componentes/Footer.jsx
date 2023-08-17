@@ -40,11 +40,10 @@ function Footer() {
                             </a>
                         </h3>
                         <h4 className="text-white">Desarrolladores:</h4>
-                        <div className="m-0 text-white">
-                            Nahuel Salvatierra <i className="bi bi-linkedin"></i>
+                        <div className="m-0 text-white"><a target='blank' href="https://www.linkedin.com/in/nahu-dev/" className='text-decoration-none text-white'>Nahuel Salvatierra </a><i className="bi bi-linkedin"></i>
                         </div>
-                        <div className="m-0 text-white">
-                            Ignacio González <i className="bi bi-linkedin"></i>
+                        <div className="m-0 text-white"><a href="" className='text-decoration-none text-white'>Ignacio González </a>
+                            <i className="bi bi-linkedin"></i>
                         </div>
                     </div>
                 </div>

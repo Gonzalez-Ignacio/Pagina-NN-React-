@@ -8,7 +8,7 @@ import Boton from '../../../componentes/Boton';
 function Presentacion() {
 
     const botonObtenerAqui = () => {
-        window.location.href = "https://www.google.com/?hl=es"
+        window.location.href = "#presencia"
     }
     const botonLeerMas = () => {
         window.location.href = "https://github.com/"
