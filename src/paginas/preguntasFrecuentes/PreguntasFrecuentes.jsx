@@ -13,11 +13,11 @@ function PreguntasFrecuentes() {
             ],
         },
         {
-            tituloAcordeones: "Tiempos y Costos",
+            tituloAcordeones: "Tiempos y Costosasd",
             PregRta: [
-                {tituloPregunta: "¿Cuánto tiempo tomará desarrollar mi página web?", descripcionRespuesta: "Esta pregunta es muy común, ya que los clientes desean tener una idea clara de cuánto tiempo llevará completar su proyecto. La respuesta dependerá del alcance y la complejidad de la página web, así como de la disponibilidad de los recursos necesarios.Es importante proporcionar una estimación realista y tener en cuenta posibles retrasos." },
-                { tituloPregunta: "¿Cuál es el costo de desarrollar una página web?", descripcionRespuesta: "millones de dolares" },
-                { tituloPregunta: "¿Qué incluye el mantenimiento y soporte posterior al lanzamiento?", descripcionRespuesta: "sin rta" },
+                {tituloPregunta: "¿Cuánto asdasdtiempo tomará desarrollar mi página web?", descripcionRespuesta: "Esta preguasdasdnta es muy común, ya que los clientes desean tener una idea clara de cuánto tiempo llevará completar su proyecto. La respuesta dependerá del alcance y la complejidad de la página web, así como de la disponibilidad de los recursos necesarios.Es importante proporcionar una estimación realista y tener en cuenta posibles retrasos." },
+                { tituloPregunta: "¿Cuál es elasdasd costo de desarrollar una página web?", descripcionRespuesta: "milloneasdasds de dolares" },
+                { tituloPregunta: "¿Qué incluyasdasde el mantenimiento y soporte posterior al lanzamiento?", descripcionRespuesta: "siasdasdn rta" },
             ],
         },
     ];
