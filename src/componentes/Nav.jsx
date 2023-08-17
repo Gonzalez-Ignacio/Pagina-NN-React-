@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importa el componente Link
-import logo from '../imagenes/logos/blanco.png';
+import logo from '../imagenes/logos/blanco.svg';
 import '../css/Nav.css';
 
 function Nav() {
