@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importa el componente Link
-import logo from '../imagenes/logos/blanco.png';
+// Style
 import '../css/Nav.css';
+// Ruta Nav
+import { Link } from 'react-router-dom'; // Importa el componente Link
+// Imagenes
+import logo from '../imagenes/logos/blanco.png';
 
 function Nav() {
     return (
@@ -44,7 +47,7 @@ function Nav() {
                         </li> 
                         */}
                         <li className="nav-item">
-                            {/* <Link to="/portfolio-overview" className="nav-link">Plantillas</Link>  */}
+                            <Link to="/plantilla" className="nav-link">Plantillas</Link> 
                         </li>
                     </ul>
                 </div>

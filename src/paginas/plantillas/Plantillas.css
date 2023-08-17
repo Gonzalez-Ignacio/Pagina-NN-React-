@@ -1,0 +1,253 @@
+/* === SideBar Reusable === */
+*{
+    padding: 0;
+}
+.sidebar .texto {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--tran-05);
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar .imagen-sidebar {
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === SideBar === */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    z-index: 2;
+    background: var(--sidebar-color);
+    transition: var(--tran-04) !important;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.sidebar.hidden {
+    opacity: 0;
+}
+
+.sidebar.close {
+    width: 84px;
+}
+
+.sidebar.close .texto {
+    opacity: 0;
+}
+
+.animacion-plantilla-main {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: var(--tran-04);
+}
+
+.animacion-plantilla-footer {
+    position: relative;
+    left: 250px;
+    width: 100%;
+    transition: var(--tran-04);
+}
+
+
+.sidebar.close~.animacion-plantilla-main {
+    left: 84px;
+    width: calc(100% - 88px);
+}
+
+.sidebar.close~.animacion-plantilla-footer {
+    left: 84px;
+    width: calc(100% - 88px);
+}
+
+.sidebar .texto-titulo {
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--tran-05);
+    opacity: 1;
+}
+
+.sidebar.close .texto-titulo {
+    opacity: 0;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon-sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.sidebar li .icon-sidebar,
+.sidebar li .texto {
+    color: var(--text-color);
+    transition: var(--tran-02);
+}
+
+.menu-links {
+    padding: 0;
+}
+
+
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar .imagen-texto-sidebar img {
+    width: 40px;
+}
+
+.sidebar header .imagen-texto-sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.header .imagen-texto-sidebar .header-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-texto .nombre {
+    font-weight: 600;
+}
+
+.header-texto .profesion {
+    margin-top: -2px;
+}
+
+.sidebar header .toggle-icon {
+    position: absolute;
+    top: 140%;
+    /* top: 50%; */
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+    transition: var(--tran-03);
+}
+
+.sidebar.close header .toggle-icon {
+    transform: translateY(-50%);
+}
+
+.sidebar .menues {
+    margin-top: 35px;
+}
+
+.sidebar .search-box {
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+    border-radius: 6px;
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+
+.sidebar li :hover .icon-sidebar,
+.sidebar li :hover .texto {
+    color: var(--sidebar-color);
+}
+
+.sidebar .menu-bar {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* === Fin Sidebar === */
+
+/* === SwiperJs Card Carousel ===  */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animacion de Sidebar Scroll */
+.sidebar.show {
+    transform: translateX(0);
+}
+
+
+
+
+:root {
+    /* Sidebar */
+  /* Color */
+  --sidebar-color: #20115B; /* bg sidebar */
+  --primary-color: #e4e9f7;   /* Icono cerrar/abrir sidebar */
+  --primary-color-light: #F6B3E5; /* bg buscador */
+  --text-color: #f7e4e4;  /* Texto del sidebar */
+  /* Transición */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+  /* Fin Sidebar */
+}
