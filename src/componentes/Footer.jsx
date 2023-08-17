@@ -1,6 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
+
+        const handleLinkClick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     return (
         <footer className="bg-morado py-4 mt-auto footer">
             <div className="container px-5">
@@ -22,6 +27,7 @@ function Footer() {
                         <div className="small m-0 text-white">Contacto</div>
                         <div className="small m-0 text-white">Preguntas Frecuentes</div>
                         <div className="small m-0 text-white">Información de empresa</div>
+                        <Link onClick={handleLinkClick} to="/politicasyprivacidad" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas y privacidad</Link> 
                     </div>
 
                     <div className="col-sm-12 col-md-6 text-md-end mt-3 mt-md-0 text">
