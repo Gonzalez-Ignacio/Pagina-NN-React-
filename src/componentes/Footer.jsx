@@ -27,7 +27,8 @@ function Footer() {
                         <div className="small m-0 text-white">Contacto</div>
                         <div className="small m-0 text-white">Preguntas Frecuentes</div>
                         <div className="small m-0 text-white">Información de empresa</div>
-                        <Link onClick={handleLinkClick} to="/politicasyprivacidad" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas y privacidad</Link> 
+                        <div><Link onClick={handleLinkClick} to="/politicasyprivacidad" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas y privacidad</Link></div>
+                        <div><Link onClick={handleLinkClick} to="/cookies" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas de cookies</Link> </div>
                     </div>
 
                     <div className="col-sm-12 col-md-6 text-md-end mt-3 mt-md-0 text">

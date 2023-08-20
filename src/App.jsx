@@ -16,6 +16,7 @@ import Precio from './paginas/precio/Precio';
 import PreguntasFrecuentes from './paginas/preguntasFrecuentes/PreguntasFrecuentes';
 import Plantillas from './paginas/plantillas/Plantillas';
 import { Politicas } from './paginas/politicas-y-privacidad/Politicas';
+import { Cookies } from './paginas/politicas-y-privacidad/cookies';
 
 
 
@@ -37,6 +38,7 @@ function App() {
                         <Route path="/preguntasFrecuentes" element={<PreguntasFrecuentes />} />
                         <Route path="/plantilla" element={<Plantillas />} />
                         <Route path="/politicasyprivacidad" element={<Politicas/>} />
+                        <Route path = "/cookies" element = {<Cookies/>}/>
                     </Routes>
 
                 </main>
