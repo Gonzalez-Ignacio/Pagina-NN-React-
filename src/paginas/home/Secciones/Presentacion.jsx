@@ -8,10 +8,10 @@ import Boton from '../../../componentes/Boton';
 function Presentacion() {
 
     const botonObtenerAqui = () => {
-        window.location.href = "#presencia"
+        window.location.href = ""
     }
     const botonLeerMas = () => {
-        window.location.href = "https://github.com/"
+        window.location.href = "#presencia"
     }
 
 

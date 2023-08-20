@@ -1,11 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { React } from 'react';
 
 function Footer() {
 
         const handleLinkClick = () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+    
     return (
         <footer className="bg-morado py-4 mt-auto footer">
             <div className="container px-5">
@@ -19,16 +20,17 @@ function Footer() {
                     </div>
                     <div className="col-sm-12 col-md-2 mt-3 mt-md-0">
                         <h5 className="text-white">Empresa</h5>
-                        <div className="small m-0 text-white">Quienes somos</div>
+                        <div><Link onClick={handleLinkClick} to="/acercaDe" className="smooth-scroll-link small m-0 text-white text-decoration-none">Quienes somos</Link></div>
                         <div className="small m-0 text-white">Colaboradores</div>
+                        <div className="small m-0 text-white">Contacto</div>
                     </div>
                     <div className="col-sm-12 col-md-2 mt-3 mt-md-0">
                         <h5 className="text-white">Soporte</h5>
-                        <div className="small m-0 text-white">Contacto</div>
-                        <div className="small m-0 text-white">Preguntas Frecuentes</div>
+
+                        <div><Link onClick={handleLinkClick} to="/preguntasFrecuentes" className="smooth-scroll-link small m-0 text-white text-decoration-none">Preguntas Frecuentes</Link></div>
                         <div className="small m-0 text-white">Información de empresa</div>
                         <div><Link onClick={handleLinkClick} to="/politicasyprivacidad" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas y privacidad</Link></div>
-                        <div><Link onClick={handleLinkClick} to="/cookies" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas de cookies</Link> </div>
+                        <div><Link onClick={handleLinkClick} to="/cookies" className="smooth-scroll-link small m-0 text-white text-decoration-none">Políticas de cookies</Link></div>
                     </div>
 
                     <div className="col-sm-12 col-md-6 text-md-end mt-3 mt-md-0 text">
