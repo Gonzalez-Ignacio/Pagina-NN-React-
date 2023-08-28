@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-function Inputs({ }) {
+function InputsRegistrarse({ }) {
     // Estados para los campos del formulario
-    const [inputs, setInputs] = useState({
+    const [inputR, setInputR] = useState({
         nombre: "",
         apellido: "",
         email: "",
@@ -29,16 +29,16 @@ function Inputs({ }) {
     //Evaluar si el formulario el estado del input
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setInputs({
-            ...inputs,
+        setInputR({
+            ...inputR,
             [name]: value,
         });
     }
-    //Mostramos mensaje en caso de que los inputs estén vacíos
+    //Mostramos mensaje en caso de que los inputR estén vacíos
     const handleShowMensaje = (mensaje) => {
         setShowMensaje({
             ...showMensaje,
-            [mensaje]: inputs[mensaje] === "",
+            [mensaje]: inputR[mensaje] === "",
         })
     }
 
@@ -47,25 +47,25 @@ function Inputs({ }) {
     //Verificación de Email y Contraseña
     const handleVerificarEmail = (e) => {
         const { name, value } = e.target;
-        const repetirEmailValue = inputs.repetirEmail                                      //inputs.email para agarrar el estado actual del input 
+        const emailValue = inputR.email                                      //inputs.email para agarrar el estado actual del input 
 
         //verificacion de email
         setVerificacionEmail(
-            name === 'email' &&
-            repetirEmailValue.includes('@') &&
-            value === repetirEmailValue
+            name === 'repetirEmail' &&
+            emailValue.includes('@') &&
+            value === emailValue
         )
 
     }
 
     const handleVerificarContraseña = (e) => {
         const { name, value } = e.target;
-        const repetirContraseñaValue = inputs.repetirContraseña;
+        const contraseñaValue = inputR.contraseña;
 
         // verificacion de contraseña
         setVerificacionContraseña(
-            name === 'contraseña' &&
-            value === repetirContraseñaValue &&
+            name === 'repetirContraseña' &&
+            value === contraseñaValue &&
             value.length >= 8
         )
     }
@@ -81,10 +81,10 @@ function Inputs({ }) {
 
         //Creamos un objeto con los datos del usuario
         const userData = {                                 //Este userData lo llamaremos dentro del fetch
-            name: inputs.nombre,
-            lastname: inputs.apellido,
-            email: inputs.email,
-            password: inputs.contraseña,
+            name: inputR.nombre,
+            lastname: inputR.apellido,
+            email: inputR.email,
+            password: inputR.contraseña,
         }
 
         fetch('http://localhost:7000/auth/signup', {
@@ -126,7 +126,7 @@ function Inputs({ }) {
                     id="nombre"
                     type="text"
                     placeholder="Nombre"
-                    value={inputs.nombre}
+                    value={inputR.nombre}
                     onChange={handleChange}
                     onBlur={() => handleShowMensaje("nombre")}
                 />
@@ -145,7 +145,7 @@ function Inputs({ }) {
                     id="apellido"
                     type="text"
                     placeholder="Apellido"
-                    value={inputs.apellido}
+                    value={inputR.apellido}
                     onChange={handleChange}
                     onBlur={() => handleShowMensaje("apellido")}
                 />
@@ -164,7 +164,7 @@ function Inputs({ }) {
                     id="email"
                     type="email"
                     placeholder="name@example.com"
-                    value={inputs.email}
+                    value={inputR.email}
                     onChange={(e) => {
                         handleChange(e)
                         handleVerificarEmail(e)
@@ -189,7 +189,7 @@ function Inputs({ }) {
                     id="confirmarEmail"
                     type="email"
                     placeholder="name@example.com"
-                    value={inputs.repetirEmail}
+                    value={inputR.repetirEmail}
                     onChange={(e) => {
                         handleChange(e)
                         handleVerificarEmail(e)
@@ -215,7 +215,7 @@ function Inputs({ }) {
                     id="contraseña"
                     type="password"
                     placeholder="Contraseña"
-                    value={inputs.contraseña}
+                    value={inputR.contraseña}
                     onChange={(e) => {
                         handleChange(e)
                         handleVerificarContraseña(e)
@@ -241,7 +241,7 @@ function Inputs({ }) {
                     id="repetirContraseña"
                     type="password"
                     placeholder="Repetir contraseña"
-                    value={inputs.repetirContraseña}
+                    value={inputR.repetirContraseña}
                     onChange={(e) => {
                         handleChange(e)
                         handleVerificarContraseña(e)
@@ -266,4 +266,4 @@ function Inputs({ }) {
     );
 }
 
-export default Inputs;
+export default InputsRegistrarse;

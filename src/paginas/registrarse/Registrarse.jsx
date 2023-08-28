@@ -1,5 +1,5 @@
 import React from 'react';
-import Inputs from './componentes/Inputs';
+import InputsRegistrarse from './componentes/InputsRegistrarse';
 
 function Registrarse() {
     
@@ -18,7 +18,7 @@ function Registrarse() {
                             {/* <!-- Formulario de registro --> */}
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                 {/* Inputs */}
-                                <Inputs />
+                                <InputsRegistrarse />
                                 {/* <!-- Mensaje de éxito al enviar el formulario --> */}
                                 {/* <div className="d-none" id="submitSuccessMessage">
                                     <div className="text-center mb-3">

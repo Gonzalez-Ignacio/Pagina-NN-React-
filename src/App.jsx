@@ -18,6 +18,7 @@ import Plantillas from './paginas/plantillas/Plantillas';
 import { Politicas } from './paginas/politicas-y-privacidad/Politicas';
 import { Cookies } from './paginas/politicas-y-privacidad/cookies';
 import Registrarse from './paginas/registrarse/Registrarse';
+import IniciarSesion from './paginas/iniciarSesion/IniciarSesion';
 
 
 
@@ -41,6 +42,7 @@ function App() {
                         <Route path="/politicasyprivacidad" element={<Politicas/>} />
                         <Route path = "/cookies" element = {<Cookies/>}/>
                         <Route path = "/registrarse" element = {<Registrarse />}/>
+                        <Route path = "/iniciarSesion" element = {<IniciarSesion />}/>
                     </Routes>
 
                 </main>
