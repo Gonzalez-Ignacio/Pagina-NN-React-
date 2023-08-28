@@ -78,39 +78,39 @@ function Inputs({ }) {
     //Funcion en el que enviaremos el formulario
     const handleRegistro = () => {
         //comprobar verificacion de email y contraseña
-        console.log("Registrado");
-        
-            //Creamos un objeto con los datos del usuario
-            const userData = {                                 //Este userData lo llamaremos dentro del fetch
-                nombre: inputs.nombre,
-                apellido: inputs.apellido,
-                email: inputs.email,
-                contraseña: inputs.contraseña,
-            }
-        
+
+        //Creamos un objeto con los datos del usuario
+        const userData = {                                 //Este userData lo llamaremos dentro del fetch
+            name: inputs.nombre,
+            lastname: inputs.apellido,
+            email: inputs.email,
+            password: inputs.contraseña,
+        }
+
+        fetch('http://localhost:7000/auth/signup', {
+            method: 'POST',                                         // POST para enviar al servidor
+            headers: {
+                'Content-Type': 'application/json',                 //Solicitud tipo JSON
+            },
+            body: JSON.stringify(userData),                         //Obtenemos el objeto con los datos del usuario
+
+        })
+            .then(response => {
+                if (response.ok) {
+                    //solicitud exitosa
+                    console.log("Usuario Registrado.");
+                    console.log(response);
+                } else {
+                    //Fallo la solicitud
+                    console.error("Error al registrar");
+                }
+            })
+            .catch(error => {
+                //error de red, no se pudo conectar al servidor
+                console.error("Error de red", error);
+            })
     }
 
-    fetch('http://localhost:7000/auth/signup', {
-        method: 'POST',                                         // POST para enviar al servidor
-        headers: {
-            'Content-Type': 'application/json',                 //Solicitud tipo JSON
-        },
-        body: JSON.stringify(userData),                         //Obtenemos el objeto con los datos del usuario
-
-    })
-        .then(response => {
-            if (response.ok) {
-                //solicitud exitosa
-                console.log("Usuario Registrado.");
-            } else {
-                //Fallo la solicitud
-                console.error("Error al registrar");
-            }
-        })
-        .catch(error => {
-            //error de red, no se pudo conectar al servidor
-            console.error("Error de red", error);
-        })
 
 
 
