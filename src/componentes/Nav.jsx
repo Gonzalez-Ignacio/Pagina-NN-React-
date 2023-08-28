@@ -49,6 +49,12 @@ function Nav() {
                         <li className="nav-item">
                             <Link to="/plantilla" className="nav-link">Plantillas</Link> 
                         </li>
+                        <li className="nav-item">
+                            <Link to="/registrarse" className="nav-link"> Regístrate </Link> 
+                        </li>
+                        {/* <li className="nav-item">
+                            <Link to="/plantilla" className="nav-link">Plantillas</Link> 
+                        </li> */}
                     </ul>
                 </div>
             </div>
