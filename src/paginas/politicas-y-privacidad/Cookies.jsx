@@ -55,7 +55,7 @@ export function Cookies() {
             <h3>Cookies propias</h3>
             <p>
                 Son aquellas cookies que son enviadas al ordenador o dispositivo
-                del Usuario y gestionadas exclusivamente por Servicios web para
+                del Usuario y gestionadas exclusivamente por NN Servicios web para
                 el mejor funcionamiento del Sitio Web. La información que se
                 recaba se emplea para mejorar la calidad del Sitio Web y su
                 Contenido y su experiencia como Usuario. Estas cookies permiten
@@ -63,49 +63,70 @@ export function Cookies() {
                 adaptar el contenido para ofrecerle contenidos que se ajusten a
                 sus preferencias.
             </p>
+            <h3>Cookies de redes sociales</h3>
             <p>
-                Cookies de redes sociales Servicios web incorpora plugins de
-                redes sociales, que permiten acceder a las mismas a partir del
-                Sitio Web. Por esta razón, las cookies de redes sociales pueden
-                almacenarse en el navegador del Usuario. Los titulares de dichas
-                redes sociales disponen de sus propias políticas de protección
-                de datos y de cookies, siendo ellos mismos, en cada caso,
-                responsables de sus propios ficheros y de sus propias prácticas
-                de privacidad. El Usuario debe referirse a las mismas para
-                informarse acerca de dichas cookies y, en su caso, del
-                tratamiento de sus datos personales. Únicamente a título
-                informativo se indican a continuación los enlaces en los que se
-                pueden consultar dichas políticas de privacidad y/o de cookies:
+                NN Servicios web incorpora plugins de redes sociales, que permiten
+                acceder a las mismas a partir del Sitio Web. Por esta razón, las
+                cookies de redes sociales pueden almacenarse en el navegador del
+                Usuario. Los titulares de dichas redes sociales disponen de sus
+                propias políticas de protección de datos y de cookies, siendo
+                ellos mismos, en cada caso, responsables de sus propios ficheros
+                y de sus propias prácticas de privacidad. El Usuario debe
+                referirse a las mismas para informarse acerca de dichas cookies
+                y, en su caso, del tratamiento de sus datos personales.
+                Únicamente a título informativo se indican a continuación los
+                enlaces en los que se pueden consultar dichas políticas de
+                privacidad y/o de cookies:
             </p>
             <ul>
                 <li>
                     Facebook:{" "}
-                    <a target="blank" href="https://www.facebook.com/policies/cookies/">https://www.facebook.com/policies/cookies/</a>
+                    <a
+                        target="blank"
+                        href="https://www.facebook.com/policies/cookies/"
+                    >
+                        https://www.facebook.com/policies/cookies/
+                    </a>
                 </li>
                 <li>
-                    Twitter: <a target="blank" href="https://twitter.com/es/privacy">https://twitter.com/es/privacy</a>
+                    Twitter:{" "}
+                    <a target="blank" href="https://twitter.com/es/privacy">
+                        https://twitter.com/es/privacy
+                    </a>
                 </li>
                 <li>
                     Instagram:{" "}
-                    <a target="blank" href="https://help.instagram.com/1896641480634370?ref=ig">
+                    <a
+                        target="blank"
+                        href="https://help.instagram.com/1896641480634370?ref=ig"
+                    >
                         https://help.instagram.com/1896641480634370?ref=ig
                     </a>
                 </li>
                 <li>
                     YouTube:{" "}
-                    <a target="blank" href="https://policies.google.com/privacy?hl=es-419&gl=mx">
+                    <a
+                        target="blank"
+                        href="https://policies.google.com/privacy?hl=es-419&gl=mx"
+                    >
                         https://policies.google.com/privacy?hl=es-419&gl=mx
                     </a>
                 </li>
                 <li>
                     Pinterest:{" "}
-                    <a target="blank" href="https://policy.pinterest.com/es/privacy-policy">
+                    <a
+                        target="blank"
+                        href="https://policy.pinterest.com/es/privacy-policy"
+                    >
                         https://policy.pinterest.com/es/privacy-policy
                     </a>
                 </li>
                 <li>
                     LinkedIn:{" "}
-                    <a target="blank" href="https://www.linkedin.com/legal/cookie-policy?trk=hp-cookies">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/legal/cookie-policy?trk=hp-cookies"
+                    >
                         https://www.linkedin.com/legal/cookie-policy?trk=hp-cookies
                     </a>
                 </li>
