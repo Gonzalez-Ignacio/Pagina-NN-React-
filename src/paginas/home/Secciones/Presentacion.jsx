@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Home.css';
-import imagen1 from '../../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png';
+import imagen1 from '../../../imagenes/composicion-aislada-tablet-laptop-smartphone/mockup-colorme-makeup.png';
 import imagen2 from '../../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png';
 import imagen3 from '../../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png';
 import Boton from '../../../componentes/Boton';
@@ -13,7 +13,6 @@ function Presentacion() {
     const botonLeerMas = () => {
         window.location.href = "#presencia"
     }
-
 
     return (
         <header className="bg-morado py-5 presentacion">
