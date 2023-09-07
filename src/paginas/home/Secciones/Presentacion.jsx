@@ -7,6 +7,12 @@ import Boton from '../../../componentes/Boton';
 
 function Presentacion() {
 
+    const botonLeerMas = () => {
+        const sectionBeneficios = document.getElementById("sectionBeneficios");
+        if (sectionBeneficios) {
+            sectionBeneficios.scrollIntoView({behavior: "auto"})
+        }
+    }
     return (
         <header className="bg-morado py-5 presentacion">
             <div className="container px-5">
@@ -20,7 +26,7 @@ function Presentacion() {
                                 objetivo.</p>
                             <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start ">
                                 <Boton nombreBoton="Obtener Aqui" className="btn-lg px-4"/>
-                                <Boton nombreBoton="Leer Más" className="botonLeerMas btn-lg px-4" />
+                                <Boton nombreBoton="Leer Más" onClick={botonLeerMas} className="botonLeerMas btn-lg px-4" />
                             </div>
                         </div>
                     </div>

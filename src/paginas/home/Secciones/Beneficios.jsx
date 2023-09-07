@@ -3,13 +3,13 @@ import '../Home.css'
 
 function Beneficios() {
     return (
-        <section className="py-5" id="features">
+        <section className="py-5" id="sectionBeneficios">
             <div className="container px-5 my-5">
                 <div className="row gx-5">
                     <div className="col-lg-4 mb-5 mb-lg-0">
                         <h2 className="fw-bolder fs-1 mb-0">El mundo verá tu huella y también:</h2>
                     </div>
-                    <div className="col-lg-8" id="presencia">
+                    <div className="col-lg-8">
                         <div className="row gx-5 row-cols-1 row-cols-md-2">
                             <div className="col mb-5 h-100">
                                 <div className="feature bg-morado bg-gradient text-white rounded-3 mb-3">
