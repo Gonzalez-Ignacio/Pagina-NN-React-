@@ -30,7 +30,7 @@ function App() {
     console.log('Nuevo userRole después del inicio de sesión:', userRole);
     return (
         <>
-            <Router>        {/* BrowserRouter as Router hace un "renombre" */}
+            <Router hashType='hashbang'>        {/* BrowserRouter as Router hace un "renombre" */}
 
                 <header>
                     {/* Navegador */}

@@ -17,7 +17,7 @@ function AcercaDe() {
                                     desarrollo web de calidad, orientado al éxito a largo plazo y enfocado en mantenerse a
                                     la vanguardia de las últimas tendencias y tecnologías.
                                 </p>
-                                <a className="btn btn-violeta text-white btn-lg" href="#scroll-target">Seguir leyendo</a>
+                                <a className="btn btn-violeta text-white btn-lg">Seguir leyendo</a>
                             </div>
                         </div>
                     </div>
