@@ -260,7 +260,7 @@ function InputsRegistrarse({ }) {
             </div>
 
             <div className="d-grid">
-                <button onClick={handleRegistro} className="btn btn-primary btn-lg mt-4" id="submitButton" type="button" >Registrarse</button>
+                <button onClick={handleRegistro} className="btn btn-violeta text-white btn-lg mt-4" id="submitButton" type="button" >Registrarse</button>
             </div>
         </div>
     );
