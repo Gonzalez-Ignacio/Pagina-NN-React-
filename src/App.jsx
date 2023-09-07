@@ -5,10 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // Ruta Nav
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';              // Enrutamiento. BrowserRouter utiliza la API de Historia del navegador (History API) para manipular la URL del navegador de forma que la aplicación pueda responder a los cambios de ruta (URL) y renderizar las páginas correspondientes.
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';              // Enrutamiento. BrowserRouter utiliza la API de Historia del navegador (History API) para manipular la URL del navegador de forma que la aplicación pueda responder a los cambios de ruta (URL) y renderizar las páginas correspondientes.
 // Component
 import Nav from './componentes/Nav';
 import Footer from './componentes/Footer';
+// Autentificación de Usuarios
+import { useAuth } from './context/AuthProvider';
 // Paginas
 import Home from './paginas/home/Home';
 import AcercaDe from './paginas/acerca-de/AcercaDe';
@@ -23,6 +25,9 @@ import IniciarSesion from './paginas/iniciarSesion/IniciarSesion';
 
 
 function App() {
+    //Autentificación de usuario
+    const { userRole } = useAuth();                                                 //Acordarse de usar {userRole === "admin/user" && (*contenido a renderizar*)}
+    console.log('Nuevo userRole después del inicio de sesión:', userRole);
     return (
         <>
             <Router>        {/* BrowserRouter as Router hace un "renombre" */}
@@ -39,10 +44,10 @@ function App() {
                         <Route path="/precio" element={<Precio />} />
                         <Route path="/preguntasFrecuentes" element={<PreguntasFrecuentes />} />
                         <Route path="/plantilla" element={<Plantillas />} />
-                        <Route path="/politicasyprivacidad" element={<Politicas/>} />
-                        <Route path = "/cookies" element = {<Cookies/>}/>
-                        <Route path = "/registrarse" element = {<Registrarse />}/>
-                        <Route path = "/iniciarSesion" element = {<IniciarSesion />}/>
+                        <Route path="/politicasyprivacidad" element={<Politicas />} />
+                        <Route path="/cookies" element={<Cookies />} />
+                        <Route path="/registrarse" element={<Registrarse />} />
+                        <Route path="/iniciarSesion" element={<IniciarSesion />} />
                     </Routes>
 
                 </main>

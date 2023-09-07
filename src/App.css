@@ -3,6 +3,7 @@
   overflow-x: hidden;
 }
 
+/* Colores */
 .bg-morado {
   --bs-bg-opacity: 1;
   background-color: #20115B
@@ -17,6 +18,10 @@
   --bs-bg-opacity: 1;
   background-color: #C876FF;
   margin: 0;
+}
+
+.bg-violeta-negro {
+  background: linear-gradient(to bottom left, #20115B, #0e0b1a);
 }
 
 
