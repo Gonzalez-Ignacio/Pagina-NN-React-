@@ -3,6 +3,14 @@ import Informacion from './seccionAcercaDe/Informacion';
 import Miembros from './seccionAcercaDe/Miembros';
 
 function AcercaDe() {
+
+    const botonSeguirLeyendo = () => {
+        // Encuentra el elemento que contiene el ID "presencia" y desplázate a él
+        const sectionInformacion = document.getElementById("sectionInformacion");
+        if (sectionInformacion) {
+            sectionInformacion.scrollIntoView({ behavior: "smooth" });
+        }
+    }
     return (
         <div>
             {/* Nuestra Misión */}
@@ -17,7 +25,7 @@ function AcercaDe() {
                                     desarrollo web de calidad, orientado al éxito a largo plazo y enfocado en mantenerse a
                                     la vanguardia de las últimas tendencias y tecnologías.
                                 </p>
-                                <a className="btn btn-violeta text-white btn-lg" href="#scroll-target">Seguir leyendo</a>
+                                <button className="btn btn-violeta text-white btn-lg" onClick={botonSeguirLeyendo}>Seguir leyendo</button>
                             </div>
                         </div>
                     </div>

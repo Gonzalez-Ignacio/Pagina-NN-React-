@@ -5,24 +5,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // Ruta Nav
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Enrutamiento. BrowserRouter utiliza la API de Historia del navegador (History API) para manipular la URL del navegador de forma que la aplicación pueda responder a los cambios de ruta (URL) y renderizar las páginas correspondientes.
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';              // Enrutamiento. BrowserRouter utiliza la API de Historia del navegador (History API) para manipular la URL del navegador de forma que la aplicación pueda responder a los cambios de ruta (URL) y renderizar las páginas correspondientes.
 // Component
-import Nav from "./componentes/Nav";
-import Footer from "./componentes/Footer";
+import Nav from './componentes/Nav';
+import Footer from './componentes/Footer';
+// Autentificación de Usuarios
+import { useAuth } from './context/AuthProvider';
 // Paginas
-import Home from "./paginas/home/Home";
-import AcercaDe from "./paginas/acerca-de/AcercaDe";
-import Precio from "./paginas/precio/Precio";
-import PreguntasFrecuentes from "./paginas/preguntasFrecuentes/PreguntasFrecuentes";
-import Plantillas from "./paginas/plantillas/Plantillas";
-import { Politicas } from "./paginas/politicas-y-privacidad/Politicas";
-import { Cookies } from "./paginas/politicas-y-privacidad/cookies";
-import Registrarse from "./paginas/registrarse/Registrarse";
+import Home from './paginas/home/Home';
+import AcercaDe from './paginas/acerca-de/AcercaDe';
+import Precio from './paginas/precio/Precio';
+import PreguntasFrecuentes from './paginas/preguntasFrecuentes/PreguntasFrecuentes';
+import Plantillas from './paginas/plantillas/Plantillas';
+import { Politicas } from './paginas/politicas-y-privacidad/Politicas';
+import { Cookies } from './paginas/politicas-y-privacidad/cookies';
+import Registrarse from './paginas/registrarse/Registrarse';
+
+
 
 function App() {
+    //Autentificación de usuario
+    const { userRole } = useAuth();                                                 //Acordarse de usar {userRole === "admin/user" && (*contenido a renderizar*)}
+    console.log('Nuevo userRole después del inicio de sesión:', userRole);
     return (
         <>
-            <Router>
+            <Router>        {/* BrowserRouter as Router hace un "renombre" */}
+
                 <header>
                     {/* Navegador */}
                     <Nav />
@@ -38,12 +46,9 @@ function App() {
                             element={<PreguntasFrecuentes />}
                         />
                         <Route path="/plantilla" element={<Plantillas />} />
-                        <Route
-                            path="/politicasyprivacidad"
-                            element={<Politicas />}
-                        />
-                        <Route path="/cookies" element={<Cookies />} />
-                        <Route path="/registrarse" element={<Registrarse />} />
+                        <Route path="/politicasyprivacidad" element={<Politicas/>} />
+                        <Route path = "/cookies" element = {<Cookies/>}/>
+                        <Route path = "/registrarse" element = {<Registrarse />}/>
                     </Routes>
                 </main>
                 <footer>

@@ -5,7 +5,7 @@ import Imagen2 from '../../../imagenes/ficha_1920x1080-copia.jpg';
 function Informacion() {
     return (
         <>
-            <section className="py-5 bg-light" id="scroll-target">
+            <section className="py-5 bg-light" id="sectionInformacion">
                 <div className="container px-5 my-5">
                     <div className="row gx-5 align-items-center">
                         <div className="col-lg-6">
