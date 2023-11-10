@@ -15,31 +15,42 @@ function CarouselSwiper({ SwiperCarousel, tituloPlantilla, classTitulo }) {
                     <div className="text-center mb-5">
                         <h2 className={`fw-bolder ${classTitulo}`}> {tituloPlantilla} </h2>
                     </div>
-                    <div className="swiper mySwiper mb-5">
-                        <div className="swiper-wrapper">
-                            <Swiper
-                                // install Swiper modules
-                                modules={[Navigation, Pagination, A11y]}
-                                spaceBetween={50}
-                                slidesPerView={3}
-                                navigation
-                                loop
-                                pagination={{ clickable: true, dynamicBullets: true }}
-                                className='texto-no-seleccionable'
-                            >
-                                {SwiperCarousel.map((imagenesSwiper, index) => (
-                                    <SwiperSlide
-                                        key={index}
-                                    >
-                                        <CompSwiperSlide
-                                            imagenSwiper={imagenesSwiper.imagenSwiper}
-                                            altSwiper={imagenesSwiper.altSwiper}
-                                        />
-                                        
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                        </div>
+                    <div className="swiper-wrapper">
+                        <Swiper
+                            // install Swiper modules
+                            modules={[Navigation, Pagination, A11y]}
+                            spaceBetween={5}
+                            navigation
+                            loop
+                            // pagination={{ clickable: true, dynamicBullets: true }}
+                            className='texto-no-seleccionable'
+                            breakpoints={{
+                                200: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 5,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 5,
+                                },
+                                992: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 5,
+                                },
+                            }}
+                        >
+                            {SwiperCarousel.map((imagenesSwiper, index) => (
+                                <SwiperSlide
+                                    key={index}
+                                >
+                                    <CompSwiperSlide
+                                        imagenSwiper={imagenesSwiper.imagenSwiper}
+                                        altSwiper={imagenesSwiper.altSwiper}
+                                    />
+
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
                 </div>
             </section>

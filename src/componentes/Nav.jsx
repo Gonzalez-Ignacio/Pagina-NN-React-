@@ -49,12 +49,12 @@ function Nav() {
                         <li className="nav-item">
                             <Link to="/plantilla" className="nav-link">Plantillas</Link> 
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link to="/registrarse" className="nav-link"> Regístrate </Link> 
                         </li>
                         <li className="nav-item">
                             <Link to="/iniciarSesion" className="nav-link">Iniciar Sesión</Link> 
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import '../Home.css';
-import Cards from '../../../componentes/Footer';
+import Cards from '../../../componentes/Cards';
 import Boton from '../../../componentes/Boton';
+import bdCards from '../../../bd/bdCards';
 
 function PlantillaDestacada() {
 
     const [plantillas, setPlantillas] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/plantillas')
-            .then((response) => response.json())
-            .then((data) => setPlantillas(data))
-            .catch((error) => console.error('Error al obtener las plantillas:', error));
+        setPlantillas(bdCards);
     }, []);
 
     return (
@@ -30,8 +28,8 @@ function PlantillaDestacada() {
 
                 {/* Cards para Plantillas destacadas  */}
                 <div className="row gx-5">
-                    {plantillas.map((plantilla) => (
-                        <Cards key={plantilla.id} img={plantilla.imagen} alt={plantilla.alts} titulo={plantilla.titulos} descripcion={plantilla.descripciones} />
+                    {plantillas.map((plantilla, index) => (
+                        <Cards key={index} img={plantilla.imagen} alt={plantilla.alts} titulo={plantilla.titulos} descripcion={plantilla.descripciones} />
                     ))}
                 </div>
                 {/* Call to action */}

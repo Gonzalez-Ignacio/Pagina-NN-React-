@@ -8,7 +8,11 @@ function Sidebar() {
         const toggleIcon = document.querySelector('.toggle-icon');
         const sidebar = document.querySelector('.sidebar');
         const searchBtn = document.querySelector('.search-box');
-        const scrollThreshold = 60;
+        const plantillaIdContent = document.getElementById("plantilla-content");
+        const hiddenSidebar = document.querySelector(".hidden");
+        const footerClass = document.querySelector(".footer");
+
+        const scrollHeight = 60;
 
         const toggleSidebar = () => {
             sidebar.classList.toggle('close');
@@ -19,10 +23,17 @@ function Sidebar() {
         };
 
         const showSidebarOnScroll = () => {
-            if (window.scrollY > scrollThreshold) {
+            if (window.scrollY > scrollHeight) {
                 sidebar.classList.remove('hidden');
+                plantillaIdContent.classList.add("plantilla-contenido");
+                if (hiddenSidebar) {
+                    footerClass.classList.add("plantilla-footer");
+                }
             } else {
                 sidebar.classList.add('hidden');
+                plantillaIdContent.classList.remove("plantilla-contenido");
+                footerClass.classList.remove("plantilla-footer");
+
             }
         };
 
@@ -36,7 +47,7 @@ function Sidebar() {
             searchBtn.removeEventListener('click', openSidebar);
             window.removeEventListener('scroll', showSidebarOnScroll);
         };
-    }, []);     //investigar el uno de "[]" porque también se puede sacar o agregar "[value]".
+    }, []);
 
 
 

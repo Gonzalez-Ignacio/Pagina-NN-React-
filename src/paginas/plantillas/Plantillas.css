@@ -1,7 +1,13 @@
 /* === SideBar Reusable === */
-*{
+* {
     padding: 0;
 }
+
+.content-with-sidebar {
+    margin-left: 2400px; /* Puedes ajustar el valor según tus necesidades */
+    transition: margin-left 0.3s; /* Agrega una transición suave para el efecto */
+}
+
 .sidebar .texto {
     font-size: 16px;
     font-weight: 500;
@@ -43,31 +49,6 @@
 
 .sidebar.close .texto {
     opacity: 0;
-}
-
-.animacion-plantilla-main {
-    position: relative;
-    left: 250px;
-    width: calc(100% - 250px);
-    transition: var(--tran-04);
-}
-
-.animacion-plantilla-footer {
-    position: relative;
-    left: 250px;
-    width: 100%;
-    transition: var(--tran-04);
-}
-
-
-.sidebar.close~.animacion-plantilla-main {
-    left: 84px;
-    width: calc(100% - 88px);
-}
-
-.sidebar.close~.animacion-plantilla-footer {
-    left: 84px;
-    width: calc(100% - 88px);
 }
 
 .sidebar .texto-titulo {
@@ -205,7 +186,18 @@
     justify-content: space-between;
 }
 
-/* === Fin Sidebar === */
+
+
+
+/* === Contenido Principal === */
+.plantilla-contenido, .plantilla-footer {
+    position: relative;
+    left: 84px;
+    width: calc(100% - 84px);
+    transition: var(--tran-05);
+}
+
+
 
 /* === SwiperJs Card Carousel ===  */
 .swiper {
@@ -239,15 +231,43 @@
 
 :root {
     /* Sidebar */
-  /* Color */
-  --sidebar-color: #20115B; /* bg sidebar */
-  --primary-color: #e4e9f7;   /* Icono cerrar/abrir sidebar */
-  --primary-color-light: #F6B3E5; /* bg buscador */
-  --text-color: #f7e4e4;  /* Texto del sidebar */
-  /* Transición */
-  --tran-02: all 0.2s ease;
-  --tran-03: all 0.3s ease;
-  --tran-04: all 0.4s ease;
-  --tran-05: all 0.5s ease;
-  /* Fin Sidebar */
+    /* Color */
+    --sidebar-color: #20115B;
+    /* bg sidebar */
+    --primary-color: #e4e9f7;
+    /* Icono cerrar/abrir sidebar */
+    --primary-color-light: #F6B3E5;
+    /* bg buscador */
+    --text-color: #f7e4e4;
+    /* Texto del sidebar */
+    /* Transición */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+    /* Fin Sidebar */
+}
+
+
+/* SwiperJS */
+.card-content {
+    border: 1px solid grey;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.swiper-card-content {
+    background-color: transparent;
+}
+
+.btn-swiper-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 13px;
+}
+
+.btn-swiper {
+    display: inline;
 }
