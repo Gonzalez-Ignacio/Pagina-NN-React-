@@ -29,7 +29,7 @@ function PlantillaDestacada() {
                 {/* Cards para Plantillas destacadas  */}
                 <div className="row gx-5">
                     {plantillas.map((plantilla, index) => (
-                        <Cards key={index} img={plantilla.imagen} alt={plantilla.alts} titulo={plantilla.titulos} descripcion={plantilla.descripciones} />
+                        <Cards key={index} img={plantilla.imagen} alt={plantilla.alts} titulo={plantilla.titulos} descripcion={plantilla.descripciones} link={plantilla.link}/>
                     ))}
                 </div>
                 {/* Call to action */}
