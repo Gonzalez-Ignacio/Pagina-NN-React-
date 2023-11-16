@@ -8,18 +8,6 @@ import { CarouselSwiper, Sidebar, WebClient } from './plantillasImports'
 function Plantillas() {
 
 
-    // const sitiosWebDestacados = [
-    //     {
-    //         tituloPlantilla: "Sitios Web de Clientes",
-    //         SwiperCarousel: [
-    //             { imagenSwiper: `${imagen3}`, altSwiper: 'imagen3' },
-    //             { imagenSwiper: `${imagen2}`, altSwiper: 'imagen2' },
-    //             { imagenSwiper: `${imagen3}`, altSwiper: 'imagen3' },
-    //             { imagenSwiper: `${imagen2}`, altSwiper: 'imagen2' },
-    //         ]
-    //     },
-    // ]
-
     const plantillaData = [
         {
             tituloPlantilla: "Restaurante",
@@ -33,37 +21,7 @@ function Plantillas() {
                 { imagenSwiper: `${imagen3}`, altSwiper: 'imagen2' },
             ]
         },
-        // {
-        //     tituloPlantilla: "Portafolio",
-        //     classTitulo: "text-start",
-        //     SwiperCarousel: [
-        //         { imagenSwiper: `${imagen1}`, altSwiper: 'imagen1' },
-        //     ]
-        // },
-        // {
-        //     tituloPlantilla: "Bar",
-        //     classTitulo: "text-start",
-        //     SwiperCarousel: [
-        //         { imagenSwiper: `${imagen1}`, altSwiper: 'imagen1' },
-        //     ]
-        // },
-        // {
-        //     tituloPlantilla: "Holearía",
-        //     classTitulo: "text-start",
-        //     SwiperCarousel: [
-        //         { imagenSwiper: `${imagen1}`, altSwiper: 'imagen1' },
-        //     ]
-        // },
-        // {
-        //     tituloPlantilla: "Tienda",
-        //     classTitulo: "text-start",
-        //     SwiperCarousel: [
-        //         { imagenSwiper: `${imagen1}`, altSwiper: 'imagen1' },
-        //     ]
-        // },
     ]
-
-
 
     return (
         <div>
@@ -72,16 +30,6 @@ function Plantillas() {
             <div id='plantilla-content'>
                 {/* Banner Sitios de Clientes */}
                 <WebClient />
-                {/* Carousel SwiperJS Sitios Web */}
-                {/* seccion 1 */}
-                {/* {sitiosWebDestacados.map((sitiosWeb, index) => (
-                    <CarouselSwiper
-                        key={index}
-                        tituloPlantilla={sitiosWeb.tituloPlantilla}
-                        SwiperCarousel={sitiosWeb.SwiperCarousel}
-                        classTitulo={sitiosWeb.classTitulo}
-                    />
-                ))} */}
 
                 {/* seccion 2 */}
                 <h2 className='text-center fw-bolder'>Plantilla</h2>
@@ -95,7 +43,6 @@ function Plantillas() {
                     />
                 ))}
 
-
                 {/* Contactanos */}
                 <section className="py-5 bg-light">
                     <div className="container px-5 my-5">
@@ -103,7 +50,6 @@ function Plantillas() {
                         <a className="btn btn-lg btn-violeta text-white" href="#!">Contáctanos</a>
                     </div>
                 </section>
-
             </div>
         </div>
     )

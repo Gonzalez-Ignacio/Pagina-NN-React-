@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import './../Plantillas.css'
-import LogoNN from '../../../imagenes/logos/blanco.png'
+import './../../Plantillas.css'
+import LogoNN from '../../../../imagenes/logos/blanco.png'
 
 function Sidebar() {
 

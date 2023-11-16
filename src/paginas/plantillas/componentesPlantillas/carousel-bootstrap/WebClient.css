@@ -1,0 +1,17 @@
+/* Imagen */
+.img-web-client {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .carousel-container {
+        position: static !important;
+        top: auto;
+        left: auto;
+        background-color: #20115B;
+    }
+}
+
+@media (max-width: 575px) {
+
+}

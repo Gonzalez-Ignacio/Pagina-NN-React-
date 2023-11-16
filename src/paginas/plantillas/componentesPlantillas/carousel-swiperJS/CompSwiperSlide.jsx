@@ -1,6 +1,6 @@
 import React from 'react'
-import Boton from '../../../componentes/Boton'
-import './../Plantillas.css'
+import Boton from '../../../../componentes/Boton'
+import './../../Plantillas.css'
 
 
 function CompSwiperSlide({imagenSwiper, altSwiper }) {
