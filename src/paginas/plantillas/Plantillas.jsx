@@ -1,8 +1,8 @@
 import React from 'react'
-import imagen2 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png'
-import imagen3 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/mockup-colorme-makeup.png'
-import imagen4 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Chino.png';
-import imagen5 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Gorgory.png';
+// import imagen2 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png'
+// import imagen3 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/mockup-colorme-makeup.png'
+import imagen1 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Chino.png';
+import imagen2 from '../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Gorgory.png';
 import { CarouselSwiper, Sidebar, WebClient } from './plantillasImports' 
 
 function Plantillas() {
@@ -13,12 +13,9 @@ function Plantillas() {
             tituloPlantilla: "Restaurante",
             classTitulo: "text-start",
             SwiperCarousel: [
-                { imagenSwiper: `${imagen2}`, altSwiper: 'imagen2' },
-                { imagenSwiper: `${imagen3}`, altSwiper: 'imagen1' },
-                { imagenSwiper: `${imagen4}`, altSwiper: 'imagen1' },
-                { imagenSwiper: `${imagen5}`, altSwiper: 'imagen2' },
-                { imagenSwiper: `${imagen4}`, altSwiper: 'imagen1' },
-                { imagenSwiper: `${imagen3}`, altSwiper: 'imagen2' },
+                { imagenSwiper: `${imagen1}`, altSwiper: 'Resto Chino', linkObtener: 'https://forms.gle/4TpkGPA6ZhyS2Cen9', linkVisitarSitio: 'https://gonzalez-ignacio.github.io/BA-UTN/' },
+                { imagenSwiper: `${imagen2}`, altSwiper: 'Resto bar Gorgory Burger', linkObtener: 'https://forms.gle/4TpkGPA6ZhyS2Cen9', linkVisitarSitio: 'https://facucugliari.github.io/' },
+
             ]
         },
     ]
@@ -26,7 +23,7 @@ function Plantillas() {
     return (
         <div>
             {/* Sidebar solo PC */}
-            <Sidebar />
+            {/* <Sidebar /> */}
             <div id='plantilla-content'>
                 {/* Banner Sitios de Clientes */}
                 <WebClient />

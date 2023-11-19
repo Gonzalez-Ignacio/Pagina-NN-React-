@@ -1,8 +1,9 @@
 import React from "react";
 import "../Home.css";
 import imagen1 from "../../../imagenes/composicion-aislada-tablet-laptop-smartphone/mockup-colorme-makeup.png";
-import imagen2 from "../../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png";
-import imagen3 from "../../../imagenes/composicion-aislada-tablet-laptop-smartphone/no-picture.png";
+import imagen2 from "../../../imagenes/composicion-aislada-tablet-laptop-smartphone/mockup-equipo-libreando.png";
+import imagen3 from "../../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Gorgory.png";
+import imagen4 from "../../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Chino.png";
 import Boton from "../../../componentes/Boton";
 import { useNavigate } from "react-router-dom";
 
@@ -56,21 +57,28 @@ function Presentacion() {
 									<img
 										src={imagen1}
 										className="d-block w-100"
-										alt="..."
+										alt="responsive pagina colormemakeup.art"
 									/>
 								</div>
 								<div className="carousel-item">
 									<img
 										src={imagen2}
 										className="d-block w-100"
-										alt="..."
+										alt="responsive pagina libreando.ar"
 									/>
 								</div>
 								<div className="carousel-item">
 									<img
 										src={imagen3}
 										className="d-block w-100"
-										alt="..."
+										alt="responsive Pagina Gorgory Burger"
+									/>
+								</div>
+								<div className="carousel-item">
+									<img
+										src={imagen4}
+										className="d-block w-100"
+										alt="responsive Pagina Restaurante Chino"
 									/>
 								</div>
 							</div>

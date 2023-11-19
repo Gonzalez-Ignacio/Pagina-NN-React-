@@ -46,6 +46,8 @@ function CarouselSwiper({ SwiperCarousel, tituloPlantilla, classTitulo }) {
                                     <CompSwiperSlide
                                         imagenSwiper={imagenesSwiper.imagenSwiper}
                                         altSwiper={imagenesSwiper.altSwiper}
+                                        linkVisitarSitio={imagenesSwiper.linkVisitarSitio}
+                                        linkObtener={imagenesSwiper.linkObtener}
                                     />
 
                                 </SwiperSlide>
