@@ -5,7 +5,6 @@ function Precio() {
     const cardsData = [                                                                   //Creamos un Objeto donde Objeto representara una Card 
         {
             titulo: 'Landing Page',
-            precio: '70.000',
             caracteristicas: [
                 { classNameIcono: 'bi bi-check text-primary', descripcion: 'Diseño Personalizado', destacada: false },          //Damos Icono, la descripcion y destacada boleano para la clase de "text mute" en caso de ser verdadero
                 { classNameIcono: 'bi bi-check text-primary', descripcion: 'Formularios de Captura', destacada: false},        //En caso de ser Falso, la clase queda vacía
@@ -26,7 +25,6 @@ function Precio() {
         },
         {
             titulo: 'Enterprise',
-            precio: '90.000',
             caracteristicas: [
                 { classNameIcono: 'bi bi-check text-primary', descripcion: 'Diseño Personalizado', destacada: false },          
                 { classNameIcono: 'bi bi-check text-primary', descripcion: 'Formularios de Captura', destacada: false},      
@@ -49,7 +47,6 @@ function Precio() {
         },
         {
             titulo: 'E-commerce',
-            precio: '110.000',
             caracteristicas: [
                 { classNameIcono: 'bi bi-check text-primary', descripcion: 'Diseño Personalizado', destacada: false },          
                 { classNameIcono: 'bi bi-check text-primary', descripcion: 'Formularios de Captura', destacada: false},      
@@ -74,7 +71,7 @@ function Precio() {
     return (
         <div>
             <section className='bg-light py-5'>
-                <div className='container px-5 my-5'>
+                <div className='container-flex px-5 my-5'>
                     <div className='text-center mb-5'>
                         <h1 className='fw-bolder'>Paga a medida que creces</h1>
                         <p className='lead fw-normal text-muted mb-0'>
@@ -83,7 +80,7 @@ function Precio() {
                     </div>
                     <div className='row gx-5 justify-content-center'>
                         {cardsData.map((card, index) => (                                //Indicamos que itere en cada una de los objetos.
-                            <div key={index} className='col-lg-6 col-xl-4'>              {/*Le damos la Key para que optimice la actualización y rendimiento*/}
+                            <div key={index} className='col-lg-7 col-xl-4'>              {/*Le damos la Key para que optimice la actualización y rendimiento*/}
                                 <CardPrecio                                    //Entonces al tener un .map le estamos diciendo que por cada obj, cree una Card
                                     titulo={card.titulo}
                                     precio={card.precio}
