@@ -1,6 +1,7 @@
 import React from 'react'
 import './WebClient.css'
-import imgWebClient from './../../../../imagenes/banner-plantillas/Banner-Plantilla.png'
+import imgWebClientBannerMd from './../../../../imagenes/banner-plantillas/Banner-Plantilla-5.png'
+import imgWebClientBannerSm from './../../../../imagenes/banner-plantillas/Banner-Plantilla-sm.png'
 import imagen1 from '../../../../imagenes/composicion-aislada-tablet-laptop-smartphone/mockup-colorme-makeup.png';
 import imagen2 from '../../../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Chino.png';
 import imagen3 from '../../../../imagenes/composicion-aislada-tablet-laptop-smartphone/Restaurante-Gorgory.png';
@@ -23,7 +24,8 @@ function WebClient() {
     return (
         <div className='mb-5 position-relative'>
             <div className="d-block"> {/* Solo visible en tamaños pequeños */}
-                <img src={imgWebClient} alt="Banner de plantilla para nuestros clientes." className='img-web-client' />
+                <img src={imgWebClientBannerSm} alt="Banner de plantilla para nuestros clientes." className='d-md-none img-web-client' />
+                <img src={imgWebClientBannerMd} alt="Banner de plantilla para nuestros clientes." className='d-none d-md-block img-web-client' />
             </div>
             <div className="col-xl-5 col-xxl-6 d-xl-block text-center position-absolute top-0 start-50 carousel-container">
                 <div id="carouselExample" className="carousel slide">
