@@ -8,7 +8,7 @@ function CardPrecio({ titulo, precio, caracteristicas }) {
                 <div className='card-body p-5'>
                     <div className='text-center text-decoration-underline text-uppercase fs-5 fw-bold text-muted'>{titulo}</div>
                     <div className='mb-3'>
-                        <span className='display-4 fw-bold'>${precio}</span>
+                        <span className='display-4 fw-bold'>{precio}</span>
                     </div>
                     <ul className='list-unstyled mb-4'>
                         {caracteristicas.map((caracteristica, index) => (                  //Le decimos que recorra las caracteristicas que están el Precio.jsx
@@ -22,7 +22,7 @@ function CardPrecio({ titulo, precio, caracteristicas }) {
                     </ul>
                     <div className='d-grid'>
                         <a className='btn btn-violeta text-white' href='#!'>
-                            Adquirir
+                            Solicitar presupuesto
                         </a>
                     </div>
                 </div>

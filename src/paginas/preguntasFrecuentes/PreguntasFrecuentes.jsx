@@ -229,7 +229,7 @@ function PreguntasFrecuentes() {
                                             <p className="text-muted mb-4">
                                                 Contactanos
                                                 <br />
-                                                <a href="#!">
+                                                <a href="nnserviciosweb@gmail.com">
                                                 nnserviciosweb@gmail.com
                                                 </a>
                                             </p>

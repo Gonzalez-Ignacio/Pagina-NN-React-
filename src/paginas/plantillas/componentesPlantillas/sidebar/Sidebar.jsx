@@ -72,7 +72,7 @@ function Sidebar() {
 
                 <div className="menu-bar">
                     <div className="menues">
-                        <h2 className="texto-titulo text-center"> Plantillas </h2>
+                        <h2 className="texto-titulo text-center"> Páginas </h2>
 
                         <li className="search-box">
                             <i className="bi bi-search icon-sidebar"></i>

@@ -47,7 +47,7 @@ function Nav() {
                         </li> 
                         */}
                         <li className="nav-item">
-                            <Link to="/plantilla" className="nav-link">Plantillas</Link> 
+                            <Link to="/plantilla" className="nav-link">Páginas</Link> 
                         </li>
                         {/* <li className="nav-item">
                             <Link to="/registrarse" className="nav-link"> Regístrate </Link> 

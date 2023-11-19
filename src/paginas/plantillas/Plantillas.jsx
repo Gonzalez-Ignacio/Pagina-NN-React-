@@ -32,7 +32,7 @@ function Plantillas() {
                 <WebClient />
 
                 {/* seccion 2 */}
-                <h2 className='text-center fw-bolder'>Plantilla</h2>
+                <h2 className='text-center fw-bolder'>Páginas</h2>
 
                 {plantillaData.map((carousel, index) => (
                     <CarouselSwiper
@@ -47,7 +47,7 @@ function Plantillas() {
                 <section className="py-5 bg-light">
                     <div className="container px-5 my-5">
                         <h2 className="display-4 fw-bolder mb-4">Construyamos algo juntos</h2>
-                        <a className="btn btn-lg btn-violeta text-white" href="#!">Contáctanos</a>
+                        <a className="btn btn-lg btn-violeta text-white" href="https://www.instagram.com/nns.digital/">Contáctanos</a>
                     </div>
                 </section>
             </div>

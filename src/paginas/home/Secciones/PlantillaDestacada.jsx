@@ -18,9 +18,9 @@ function PlantillaDestacada() {
                 <div className="row gx-5 justify-content-center">
                     <div className="col-lg-8 col-xl-6">
                         <div className="text-center">
-                            <h2 className="fw-bolder">Plantillas Destacadas</h2>
+                            <h2 className="fw-bolder">Páginas Destacadas</h2>
                             <p className="lead fw-normal text-muted mb-5">
-                                Aquí están las plantillas mas destacadas por la comunidad
+                                Aquí están las Páginas más destacadas
                             </p>
                         </div>
                     </div>
