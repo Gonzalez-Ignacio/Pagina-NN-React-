@@ -21,7 +21,7 @@ function CardPrecio({ titulo, precio, caracteristicas }) {
                         ))}
                     </ul>
                     <div className='d-grid'>
-                        <a className='btn btn-violeta text-white' href='#!'>
+                        <a className='btn btn-violeta text-white' href="https://www.instagram.com/nns.digital/" target="_blank">
                             Solicitar presupuesto
                         </a>
                     </div>

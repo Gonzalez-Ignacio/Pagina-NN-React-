@@ -38,7 +38,7 @@ function Footer() {
                             <a href="https://wa.me/541165776749" target="_blank" className='icono-whatsapp'>
                                 <i className="bi bi-whatsapp me-2 me-md-3"></i>
                             </a>
-                            <a href="https://www.instagram.com/nns.digital/" target="_blank" className='icono-instagram'>
+                            <a href="https://instagram.com/nns.digital?igshid=MTNiYzNiMzkwZA==" target="_blank" className='icono-instagram'>
                                 <i className="bi bi-instagram"></i>
                             </a>
                         </h3>

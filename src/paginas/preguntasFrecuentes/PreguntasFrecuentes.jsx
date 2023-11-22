@@ -229,7 +229,7 @@ function PreguntasFrecuentes() {
                                             <p className="text-muted mb-4">
                                                 Contactanos
                                                 <br />
-                                                <a href="nnserviciosweb@gmail.com">
+                                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nnserviciosweb@gmail.com&su=Dudas%20sobre%20la%20pagina&body=Quiero%20recibir%20más%20información" target="_blank">
                                                 nnserviciosweb@gmail.com
                                                 </a>
                                             </p>
@@ -239,12 +239,14 @@ function PreguntasFrecuentes() {
                                             <a
                                                 className="fs-5 px-2 link-dark"
                                                 href="https://www.facebook.com/people/NNS/61550064306296/"
+                                                target="_blank"
                                             >
                                                 <i className="bi-facebook"></i>
                                             </a>
                                             <a
                                                 className="fs-5 px-2 link-dark"
-                                                href="https://www.instagram.com/nns.digital/"
+                                                href="https://www.instagram.com/nns.digital/" 
+                                                target="_blank"
                                             >
                                                 <i className="bi-instagram"></i>
                                             </a>

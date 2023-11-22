@@ -1,9 +1,12 @@
 import React from "react";
 import Boton from "./Boton";
 
-function Cards({ img, alt, titulo, descripcion, link }) {
-	const handleOnClik = () => {
+function Cards({ img, alt, titulo, descripcion, link, linkVisitWeb }) {
+	const handleOnClickForm = () => {
 		window.open(link, "_blank");
+	};
+	const handleOnClickVisitWeb = () => {
+		window.open(linkVisitWeb, "_blank");
 	};
 
 	return (
@@ -21,11 +24,11 @@ function Cards({ img, alt, titulo, descripcion, link }) {
 					<div className="d-flex align-items-end justify-content-between">
 						<Boton
 							nombreBoton={"Obtener"}
-							onClick={handleOnClik}
+							onClick={handleOnClickForm}
                             className="flex-fill "
 						/>{" "}
 						{/* Falta agregar onClick  */}
-						<Boton nombreBoton="Visitar Sitio" />
+						<Boton nombreBoton="Visitar Sitio" onClick={handleOnClickVisitWeb}/>
 					</div>
 				</div>
 			</div>
