@@ -18,10 +18,10 @@ function Items({ imagenPrincipal, altImagenPrincipal, linkPrevisualizar, linkObt
                 <div className="carousel-item mb-3" key={index}>
                     <img src={contenido.imagenSecundaria} className="d-block w-100" alt={contenido.altImagenSecundaria} />
                     
-                    <button className={`btn btn-violeta text-white px-2 ms-4`}>
+                    <button className={`btn btn-violeta text-white px-2 ms-4 me-4 me-md-0`}>
                         <a href={contenido.linkObtener} target='_blank' className='text-decoration-none text-white'> Obtener </a>
                     </button>
-                    <button className={`btn btn-violeta text-white px-2 me-0 ms-0 me-md-5 ms-md-5`}>
+                    <button className={`btn btn-violeta text-white px-2 me-0 ms-4 me-md-5 ms-md-5`}>
                         <a href={contenido.linkPrevisualizar} target='_blank' className='text-decoration-none text-white'> Visitar Sitio </a>
                     </button>
                 </div>
